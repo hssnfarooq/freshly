@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Nav Menu */
+.container-1 {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.nav .logo img {
+  width: 100px;
+  margin-top: 12px;
+}
+
+.nav .order-placing-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.nav .order-placing-list li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.nav .order-placing-list li i {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 0px 12px;
+}
+
+.nav .dropbtn {
+  background-color: #fff;
+  color: #3167ff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.nav .dropdown {
+  position: relative;
+  min-width: 160px;
+}
+
+.nav .dropdown-content {
+  display: none;
+  min-width: 165px;
+  position: absolute;
+  background-color: #ffff;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.nav .dropdown-content ul {
+  list-style: none;
+  text-align: center;
+}
+.nav .dropdown-content ul li i {
+  color: #3167ff;
+  font-size: 1.8rem;
+  padding-top: 10px;
+}
+
+.nav .dropdown-content a {
+  color: #3167ff;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.nav .dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Date Card Section */
+.card-date-section h1 {
+  font-size: 4.8rem;
+  color: #333;
+  margin: 20px 0px 50px;
+  text-align: center;
+}
+
+.card-date-section .date-card {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 435px;
+  overflow-y: scroll;
+}
+
+.card-date-section .date-card ul {
+  list-style: none;
+  height: 250px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+.card-date-section .date-card li span {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.card-date-section .date-card li::before {
+  content: '';
+  height: 48px;
+  width: 8px;
+  background-color: #777;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.card-date-section .date-card li::after {
+  content: '';
+  height: 48px;
+  width: 8px;
+  background-color: #777;
+  position: absolute;
+  top: 0;
+  right: -0.2px;
+  display: block;
+}
+
+.card-date-section .date-card li {
+  border-bottom: 1.2px solid #666;
+  /* border-right: 1.2px solid #333;
+  border-left: 1.2px solid #333; */
+  padding: 10px 0px 10px 15px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.card-date-section .date-card li:first-child {
+  border-top: 1.2px solid #666;
+}
+
+.card-date-section .date-card li:last-child {
+  border-bottom: 1.2px solid #666;
+}
+
+.card-date-section .date-card li:hover {
+  transform: translateX(5px);
+}
+
+.card-date-section .date-card li:hover::before {
+  display: block;
+  background-color: #3167ff;
+}
+
+.card-date-section .date-card li:hover:after {
+  display: block;
+  background-color: #3167ff;
+}
+
+.container-1 .card-date-section small {
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+  margin: 5px 0px;
+}
+
+.container-1 .card-date-section div i {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container-1 .card-date-section .next-btn {
+  width: 435px;
+  color: #fff;
+  background-color: #3167ff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 12px auto;
+}
+
+.container-1 .card-date-section p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 15px 0px 40px 0px;
+  text-align: center;
+}
+
+/* Accordion */
+.container-2 {
+  max-width: 1250px;
+  margin: 0 auto 45px;
+  padding: 0px 35px;
+}
+
+.faq {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #333;
+  margin: 35px 0px 15px 0px;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 2.5rem 0;
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.accordion button .accordion-title {
+  padding: 1rem 1.5rem 1rem 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 50rem;
+  transition: all 800ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 300ms linear, max-height 600ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 1.2rem 0;
+  width: 65%;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+  .nav .order-placing-list {
+    display: none;
+  }
+
+  .accordion .accordion-content p {
+    width: 92%;
+  }
+}
+
+@media (max-width: 650px) {
+  .card-date-section h1 {
+    font-size: 4rem;
+  }
+
+  .faq {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 555px) {
+  .nav {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-date-section .date-card {
+    width: 355px;
+  }
+
+  .container-1 .card-date-section .next-btn {
+    width: 355px;
+  }
+
+  .card-date-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  .faq {
+    font-size: 3.5rem;
+  }
+}
