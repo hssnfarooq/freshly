@@ -976,13 +976,15 @@ a {
 }
 
 .modal-body .modal-parent .modal-child h5 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #333;
   margin-bottom: 15px;
 }
 
 .modal-body .modal-parent .modal-child p {
   font-size: 1.3rem;
+  line-height: 1.6em;
+  font-weight: 600;
   color: #333;
   margin-bottom: 10px;
 }
