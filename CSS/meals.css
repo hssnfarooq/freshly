@@ -374,7 +374,7 @@ body {
 }
 .cart-section-scroll {
   overflow-y: auto;
-  height: 65%;
+  height: 45vh;
 }
 
 .special-cart-section .cart-btn {
