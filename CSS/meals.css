@@ -331,7 +331,7 @@ body {
 }
 
 .container-left .main-cart-section-scroll {
-  height: 500px;
+  height: 65vh;
   overflow-y: auto;
 }
 
