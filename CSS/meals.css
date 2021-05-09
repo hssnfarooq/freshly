@@ -150,11 +150,11 @@ body {
 }
 
 .container-1 .signature-section-cards .signature-section-cards-list .card-1 {
-  width: 270px;
+  width: 235px;
   border: 0.5px solid #eee;
   margin-top: 10px;
   margin-bottom: 5px;
-  margin-right: 15px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -163,7 +163,7 @@ body {
   .signature-section-cards-list
   .card-1
   img {
-  width: 269px;
+  width: 234px;
 }
 
 .container-1 .signature-section-cards .signature-section-cards-list .card-1 h6 {
@@ -333,7 +333,7 @@ body {
 }
 
 .container-left .main-cart-section-scroll {
-  height: 580px;
+  height: 550px;
   overflow-y: auto;
 }
 
