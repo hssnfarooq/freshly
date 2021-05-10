@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Nav Menu */
+.container-1 {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.nav .logo img {
+  width: 100px;
+  margin-top: 12px;
+}
+
+.nav .order-placing-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.nav .order-placing-list li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.nav .order-placing-list li i {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 0px 12px;
+}
+
+.nav .dropbtn {
+  background-color: #fff;
+  color: #3167ff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.nav .dropdown {
+  position: relative;
+  min-width: 160px;
+}
+
+.nav .dropdown-content {
+  display: none;
+  min-width: 165px;
+  position: absolute;
+  background-color: #ffff;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.nav .dropdown-content ul {
+  list-style: none;
+  text-align: center;
+}
+.nav .dropdown-content ul li i {
+  color: #3167ff;
+  font-size: 1.8rem;
+  padding-top: 10px;
+}
+
+.nav .dropdown-content a {
+  color: #3167ff;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.nav .dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Both Sides */
+
+.flex-left-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Left Form */
+
+.left-side {
+  width: 50%;
+}
+
+.left-side h1 {
+  color: #333;
+  font-size: 3rem;
+  margin: 12px 0px;
+}
+
+.left-side form {
+  width: 100%;
+  padding: 15px 65px 30px;
+  border: 1.2px solid #eee;
+}
+
+.left-side form h3 {
+  font-size: 2rem;
+  color: #333;
+  margin: 10px 0px;
+}
+
+.left-side form .form-control {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.left-side form .form-control label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.left-side form .form-ctrl label {
+  display: inline;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+input[type='checkbox'] {
+  transform: scale(1.2);
+}
+
+.left-side form .form-control input {
+  padding: 7px 14px;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.left-side form .form-control .lname,
+.state,
+.zip,
+.cvv {
+  margin-left: 15px;
+  width: 50%;
+}
+
+.left-side form .form-control .fname,
+.city,
+.expiration {
+  width: 50%;
+}
+
+.left-side form .form-control .fullname,
+.address1,
+.address2,
+.phone,
+.email,
+.creditno {
+  width: 100%;
+}
+
+.left-side form .total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.left-side form .total-amount p {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.left-side form .next-btn a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3167ff;
+  padding: 8px 15px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.left-side form .payment-info {
+  margin: 15px 0px;
+}
+
+.left-side form .payment-info h4 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.left-side form .payment-info .radio-payment-paypal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left-side form .payment-info .radio-payment-paypal img {
+  width: 40px;
+  display: block;
+  margin-left: 10px;
+}
+
+.left-side form .payment-info .radio-payment-paypal p {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.left-side form .payment-info .radio-payment-paypal input {
+  width: 20px;
+  height: 20px;
+}
+
+.left-side form .payment-info .radio-payment-cc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.left-side form .payment-info .radio-payment-cc img {
+  width: 40px;
+  display: block;
+  margin-left: 10px;
+}
+
+.left-side form .payment-info .radio-payment-cc p {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.left-side form .payment-info .radio-payment-cc input {
+  width: 20px;
+  height: 20px;
+}
+
+.left-side form .small-note {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #666;
+  margin: 15px 0px;
+}
+
+.left-side small {
+  font-weight: 600;
+  margin: 15px 0px;
+  line-height: 1.35;
+  display: inline-block;
+  text-align: justify;
+}
+
+#credit-card-info {
+  display: none;
+}
+
+/* Right Side */
+.right-side {
+  width: 40%;
+}
+
+.right-side .right-side-section-1 {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.right-side .right-side-section-1 h1 {
+  color: #333;
+  font-size: 3rem;
+  margin: 12px 0px;
+}
+
+.right-side .right-side-section-1 .summary {
+  width: 100%;
+  padding: 15px 65px 30px;
+  border: 1.2px solid #eee;
+  margin: 0 auto;
+}
+
+.right-side .right-side-section-1 .summary .form-control {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.right-side .right-side-section-1 .summary .form-control label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.right-side .right-side-section-1 .summary .form-control input {
+  padding: 7px 14px;
+  width: 55%;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.right-side .right-side-section-1 .summary .form-control .apply-btn {
+  margin-left: 15px;
+  width: 45%;
+  padding: 8.5px 14px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #3167ff;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.right-side .right-side-section-1 .summary .select-form-ctrl {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* select */
+.right-side .right-side-section-1 .summary .select-form-ctrl select#soflow,
+select#soflow-color {
+  border: 1px solid #666;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.6rem;
+  overflow: hidden;
+  padding: 6px 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  outline: none;
+  border-radius: 5%;
+}
+
+.right-side .right-side-section-1 .summary .select-form-ctrl select#soflow,
+select#soflow-color::placeholder {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.right-side .right-side-section-1 .summary .meals-per-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0px;
+}
+
+.right-side .right-side-section-1 .summary .meals-per-week p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.right-side .right-side-section-1 .summary .shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 12px 0px;
+}
+
+.right-side .right-side-section-1 .summary .shipping p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.right-side .right-side-section-1 .summary .today-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0px 0px;
+}
+
+.right-side .right-side-section-1 .summary .today-total p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Right Side 2 */
+
+.right-side .right-side-section-2 {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.right-side .right-side-section-2 h1 {
+  color: #333;
+  font-size: 3rem;
+  margin: 12px 0px;
+}
+
+.right-side .right-side-section-2 .card-meal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 10px 15px;
+}
+
+.right-side .right-side-section-2 .card-meal img {
+  display: inline-block;
+  width: 80px;
+}
+
+.right-side .right-side-section-2 .card-meal h5 {
+  font-size: 1.5rem;
+}
+
+.right-side .right-side-section-2 .card-meal p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  width: 250px;
+  line-height: 1.35;
+}
+
+.right-side .right-side-section-2 .card-meal div {
+  color: #666;
+  font-size: 1.4rem;
+  width: 250px;
+  line-height: 1.35;
+}
+
+/* Accordion */
+.container-2 {
+  max-width: 1250px;
+  margin: 0 auto 45px;
+  padding: 0px 35px;
+}
+
+.faq {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #333;
+  margin: 35px 0px 15px 0px;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 2.5rem 0;
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.accordion button .accordion-title {
+  padding: 1rem 1.5rem 1rem 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 50rem;
+  transition: all 800ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 300ms linear, max-height 600ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 1.2rem 0;
+  width: 65%;
+}
+
+/* Media Queries */
+
+@media (max-width: 1050px) {
+  .left-side {
+    width: 50%;
+  }
+
+  .right-side {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-left-right {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-side {
+    width: 85%;
+  }
+
+  .right-side {
+    width: 85%;
+  }
+
+  .right-side .right-side-section-1 {
+    margin-left: 0px;
+  }
+
+  .right-side .right-side-section-2 {
+    margin-left: 0px;
+  }
+
+  .nav .order-placing-list {
+    display: none;
+  }
+
+  .accordion .accordion-content p {
+    width: 92%;
+  }
+
+  .faq {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-side form {
+    padding: 15px;
+  }
+
+  .right-side .right-side-section-1 .summary {
+    padding: 15px;
+  }
+
+  .left-side {
+    width: 95%;
+  }
+
+  .right-side {
+    width: 95%;
+  }
+
+  .right-side .right-side-section-2 .card-meal h5 {
+    font-size: 1.4rem;
+    width: 15px;
+  }
+
+  .right-side .right-side-section-2 .card-meal p {
+    font-size: 1.4rem;
+
+    width: 200px;
+  }
+
+  .right-side .right-side-section-2 .card-meal div {
+    width: 200px;
+  }
+
+  .left-side form .payment-info .radio-payment-cc p {
+    font-size: 1.4rem;
+  }
+  .left-side h1 {
+    text-align: center;
+  }
+  .right-side .right-side-section-1 h1 {
+    text-align: center;
+  }
+  .right-side .right-side-section-2 h1 {
+    text-align: center;
+  }
+}
