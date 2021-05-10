@@ -748,6 +748,7 @@ header {
   background-color: #fff;
   max-width: 750px;
   height: 95vh;
+  overflow-y: auto ;
   /* max-width: 80%; */
 }
 
@@ -812,8 +813,7 @@ header {
 .modal-body {
   padding: 10px 20px;
   margin: 10px 0px 5px;
-  overflow-y: scroll;
-  height: 500px;
+
 }
 
 .modal-body .modal-parent {
