@@ -306,6 +306,7 @@ a {
 }
 
 .signature-section .signature-image-parent .signature-image-child h2 {
+  text-align: center;
   width: 70%;
   font-size: 3.8rem;
   margin-bottom: 10px;
@@ -314,6 +315,7 @@ a {
 }
 
 .signature-section .signature-image-parent .signature-image-child p {
+  text-align: center;
   font-size: 1.4rem;
   width: 70%;
   line-height: 1.6;
@@ -458,6 +460,7 @@ a {
 }
 
 .signature-section .signature-image-parent .twist-image-child h2 {
+  text-align: center;
   width: 70%;
   font-size: 3.8rem;
   margin-bottom: 10px;
@@ -485,6 +488,7 @@ a {
 }
 
 .signature-section .signature-image-parent .craft-image-child h2 {
+  text-align: center;
   width: 70%;
   font-size: 3.8rem;
   margin-bottom: 10px;
@@ -512,6 +516,7 @@ a {
 }
 
 .signature-section .signature-image-parent .fit-image-child h2 {
+  text-align: center;
   width: 70%;
   font-size: 3.8rem;
   margin-bottom: 10px;
@@ -954,7 +959,7 @@ a {
   padding: 10px 20px;
   margin: 10px 0px 5px;
   overflow-y: scroll;
-  height: 350px;
+  height: 500px;
 }
 
 .modal-body .modal-parent {
@@ -1403,6 +1408,9 @@ button[data-modal-target='#modal']:active {
   .freshly-pages {
     display: none;
   }
+  .navbar-ham {
+    height: 55vh;
+  }
   .footer-parent .footer-company {
     margin-left: 45px;
   }
@@ -1414,5 +1422,8 @@ button[data-modal-target='#modal']:active {
   .modal-header .label-flex div {
     font-size: 1rem;
     text-align: center;
+  }
+  .menu-plans-links{
+    display: none;
   }
 }

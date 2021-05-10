@@ -459,6 +459,272 @@ body {
   margin-top: 10px;
 }
 
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+  max-width: 750px;
+  height: 95vh;
+  /* max-width: 80%; */
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-header {
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.modal-header h3 {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.modal-header h6 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.modal-btn {
+  width: 100px;
+  padding: 8px 10px;
+  background-color: #3167ff;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+}
+
+.modal-header .label-flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modal-header .label-flex div {
+  padding: 6px 10px;
+  margin-right: 10px;
+  border-radius: 100px;
+  background-color: #b8fffa;
+  font-family: inherit;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.modal-header .title {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.modal-header .close-button {
+  background: transparent;
+  border: none;
+  outline: unset;
+  font-size: 2em;
+  cursor: pointer;
+  float: right;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  margin: 10px 0px 5px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.modal-body .modal-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-body .modal-parent .modal-child img {
+  max-width: 300px;
+}
+
+.modal-body .modal-parent .modal-child .card-1 {
+  padding: 20px 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.modal-body .modal-parent .modal-child h5 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-body .modal-parent .modal-child p {
+  font-size: 1.3rem;
+  line-height: 1.6em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-body .modal-parent .modal-child .card-2 {
+  padding: 20px 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.modal-body .modal-parent .modal-child .card-2 .card-2-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body
+  .modal-parent
+  .modal-child
+  .card-2
+  .card-2-parent
+  .card-2-grandchild
+  .card-2-child {
+  width: 70px;
+  height: 150px;
+}
+
+.modal-body
+  .modal-parent
+  .modal-child
+  .card-2
+  .card-2-parent
+  .card-2-grandchild
+  .card-2-child
+  img {
+  width: 100%;
+}
+
+.modal-body
+  .modal-parent
+  .modal-child
+  .card-2
+  .card-2-parent
+  .card-2-grandchild
+  .card-2-child
+  p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.modal-body .modal-parent .modal-child .card-3 {
+  padding: 20px 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.modal-body .modal-parent .modal-child .card-3 h5 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.modal-body .modal-parent .modal-child .card-3 .card-3-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.modal-body
+  .modal-parent
+  .modal-child
+  .card-3
+  .card-3-parent
+  .card-3-child
+  strong {
+  font-size: 1.2rem;
+}
+
+.modal-body .modal-parent .modal-child .card-3 .card-3-parent .card-3-child h2 {
+  color: #666;
+}
+
+.modal-body .modal-parent .modal-child .card-3 .card-3-parent .vert {
+  width: 10px;
+  height: 130px;
+  border-left: 1px solid #666;
+  position: relative;
+}
+
+.modal-body .modal-parent .modal-child .card-3 .card-3-parent .vert::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  width: 220px;
+  height: 1px;
+  color: #666;
+  background-color: #666;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+button[data-modal-target='#modal'] {
+  background-color: #00b7c2;
+  color: #e5e5e5;
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+button[data-modal-target='#modal']:active {
+  background-color: #00b7c2;
+  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.4);
+  border: 1px solid #fff;
+}
+
 /* Media Queries */
 
 @media (max-width: 1280px) {
@@ -629,6 +895,61 @@ body {
 
   .cart-btn-responsive {
     display: block;
+  }
+}
+
+@media (max-width: 630px){
+  .modal {
+    overflow-y: scroll;
+    width: 90vw;
+    height: 500px;
+  }
+
+  .modal-body {
+    overflow-y: visible;
+    height: 400px;
+  }
+
+  .modal-body .modal-parent {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .modal-body .modal-parent .modal-child img {
+    max-width: 100%;
+  }
+
+  .modal-btn {
+    display: none;
+  }
+
+  .modal-body .modal-parent .modal-child .img-hide {
+    display: none;
+  }
+
+  .modal-body .modal-parent .modal-child .card-1,
+  .modal-body .modal-parent .modal-child .card-2,
+  .modal-body .modal-parent .modal-child .card-3 {
+    max-width: 100%;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+
+  .modal-header .label-flex div {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px){
+  .modal-header h3 {
+    font-size: 2.2rem;
+    margin-top: 2px;
+  }
+
+  .modal-header .label-flex div {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 

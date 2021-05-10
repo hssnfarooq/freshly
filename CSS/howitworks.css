@@ -865,6 +865,10 @@ a {
     margin-left: 45px;
   }
 
+  .navbar-ham {
+    height: 55vh;
+  }
+  
   .menu-plans-links {
     display: none;
   }

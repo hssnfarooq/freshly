@@ -521,6 +521,7 @@ Choose a Meal */
 
   .left-side-kitchen {
     width: 80%;
+    display: none;
   }
 
   .right-side-kitchen {
@@ -558,7 +559,7 @@ Choose a Meal */
   }
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .right-side-kitchen {
     width: 100%;
   }
@@ -571,7 +572,7 @@ Choose a Meal */
   .signature-section-cards .signature-section-cards-list .card-1 img {
     width: 214px;
   }
-}
+} */
 
 @media (max-width: 575px) {
   .right-side-kitchen {
@@ -580,11 +581,11 @@ Choose a Meal */
   }
 
   .signature-section-cards .signature-section-cards-list .card-1 {
-    width: 285px;
+    width: 200px;
   }
 
   .signature-section-cards .signature-section-cards-list .card-1 img {
-    width: 284px;
+    width: 199px;
   }
 
   .right-side-kitchen
@@ -592,8 +593,8 @@ Choose a Meal */
     .filter-kitchen-parent
     .filter-kitchen-child
     .filter-kitch-image-1 {
-    width: 280px;
-    height: 150px;
+    width: 135px;
+    height: 85px;
   }
 
   .right-side-kitchen
@@ -601,8 +602,8 @@ Choose a Meal */
     .filter-kitchen-parent
     .filter-kitchen-child
     .filter-kitch-image-2 {
-    width: 280px;
-    height: 150px;
+      width: 135px;
+      height: 85px;
   }
 
   .right-side-kitchen
@@ -610,8 +611,8 @@ Choose a Meal */
     .filter-kitchen-parent
     .filter-kitchen-child
     .filter-kitch-image-3 {
-    width: 280px;
-    height: 150px;
+      width: 135px;
+      height: 85px;
   }
 
   .right-side-kitchen
@@ -619,8 +620,8 @@ Choose a Meal */
     .filter-kitchen-parent
     .filter-kitchen-child
     .filter-kitch-image-4 {
-    width: 280px;
-    height: 150px;
+      width: 135px;
+      height: 85px;
   }
 
   .right-side-kitchen
@@ -628,8 +629,8 @@ Choose a Meal */
     .filter-kitchen-parent
     .filter-kitchen-child
     .filter-kitch-image-5 {
-    width: 280px;
-    height: 150px;
+      width: 135px;
+      height: 85px;
   }
 
   .right-side-kitchen
@@ -637,7 +638,7 @@ Choose a Meal */
     .filter-kitchen-parent
     .filter-kitchen-child
     .filter-kitch-image-6 {
-    width: 280px;
-    height: 150px;
+      width: 135px;
+      height: 85px;
   }
 }
