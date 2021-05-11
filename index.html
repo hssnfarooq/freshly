@@ -38,7 +38,7 @@
           <ul>
             <li><a href="planmenu.html">Plan & Menu</a></li>
             <li><a href="howitworks.html">How it Works</a></li>
-            <li><a href="#">Get $40</a></li>
+            <li><a href="#" data-modal-target="#modal-get">Get $40</a></li>
             <li><a href="#">Help</a></li>
           </ul>
         </div>
@@ -51,7 +51,7 @@
               <li><a href="/howitworks.html">How it Works</a></li>
             </div>
             <div class="list-1">
-              <li><a href="#">Get $40</a></li>
+              <li><a href="#" data-modal-target="#modal-get">Get $40</a></li>
             </div>
             <div class="list-1">
               <li><a href="#">Help</a></li>
@@ -1024,6 +1024,60 @@
       </div>
     </div>
     <div id="overlay"></div>
+
+<!-- $40 -->
+<div class="modal-get" id="modal-get">
+  <div class="modal-get-body">
+    <div class="modal-get-parent">
+      <div class="modal-get-child-1">
+        <img class="image-1" src="./Img/Get$40/get.jpg" alt="" />
+        <img class="image-2" src="./Img/Get$40/res-get.jpg" alt="" />
+      </div>
+      <div class="modal-get-child-2">
+        <button data-close-button class="get-close-button">&times;</button>
+        <div class="center-child-2">
+          <h1>Give $40, Get $40</h1>
+          <h2>
+            Refer your friends and earn $40 for each friend when they join!
+          </h2>
+          <p>Enter your email to get your share link</p>
+          <div class="form-control">
+            <input type="email" placeholder="Your email" />
+            <button class="enter-btn">Enter</button>
+          </div>
+          <div class="form-control">
+            <button class="btn-1">
+              <span><i class="fas fa-envelope"></i></span> Email
+            </button>
+            <button style="background-color: #3b5998" class="btn-2">
+              <span><i class="fab fa-facebook"></i></span> Facebook
+            </button>
+          </div>
+          <div class="form-control">
+            <button style="background-color: #0084ff" class="btn-1">
+              <span><i class="fab fa-facebook-messenger"></i></span>
+              Messenger
+            </button>
+            <button style="background-color: #4099ff" class="btn-2">
+              <span><i class="fab fa-twitter"></i></span> Twitter
+            </button>
+          </div>
+          <div class="form-control">
+            <button style="background-color: #25d366" class="btn-1">
+              <span><i class="fab fa-whatsapp"></i></span> Whatsapp
+            </button>
+            <button style="background-color: #bd081c" class="btn-2">
+              <span><i class="fab fa-pinterest"></i></span> Pinterest
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="overlay"></div>
+
+    <script src="./JS/get40Modal.js"></script>
     <script src="./JS/modal-show.js"></script>
     <script src="./JS/slide-show.js"></script>
     <script src="./JS/navbar-hamburger.js"></script>

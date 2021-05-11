@@ -748,7 +748,6 @@ header {
   background-color: #fff;
   max-width: 750px;
   height: 95vh;
-  overflow-y: auto ;
   /* max-width: 80%; */
 }
 
@@ -813,7 +812,8 @@ header {
 .modal-body {
   padding: 10px 20px;
   margin: 10px 0px 5px;
-
+  overflow-y: auto;
+  height: 420px;
 }
 
 .modal-body .modal-parent {
@@ -1559,5 +1559,309 @@ button[data-modal-target='#modal']:active {
 
   .section-4 {
     margin: 40px 0px;
+  }
+}
+
+/* $40 */
+.modal-get {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+  width: 950px;
+  height: 99vh;
+  /* max-width: 80%; */
+}
+
+.modal-get.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 .get-close-button {
+  background: #669966;
+  border: none;
+  outline: unset;
+  font-size: 3.2rem;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #eee;
+  margin: 10px 10px 10px 0px;
+}
+
+.modal-get-body {
+  padding: 0px;
+  height: 100%;
+  position: relative;
+}
+
+.modal-get-body .modal-get-parent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-1 {
+  width: 45%;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-1 .image-2 {
+  display: none;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-1 .image-1 {
+  width: 100%;
+  height: 99vh;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 {
+  width: 55%;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 .center-child-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 75px 0px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 h1 {
+  font-size: 3.5rem;
+  color: #03514e;
+  margin: 45px 0px 10px;
+  text-align: center;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 h2 {
+  font-size: 2rem;
+  color: #03514e;
+  width: 80%;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 35px;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 p {
+  font-size: 1.5rem;
+  color: #03514e;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 .form-control {
+  margin: 15px 0px;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 .form-control input {
+  padding: 18px 25px;
+  display: inline-block;
+  border: 1.2px solid #666;
+  border-radius: 50px;
+  width: 275px;
+  outline: none;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.modal-get-body
+  .modal-get-parent
+  .modal-get-child-2
+  .form-control
+  input::placeholder {
+  color: #6666;
+  font-size: 1.6rem;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 .form-control .enter-btn {
+  width: 105px;
+  padding: 18px 25px;
+  text-align: center;
+  color: #eee;
+  background-color: #669966;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-get-body .modal-get-parent .modal-get-child-2 .form-control .btn-1,
+.btn-2 {
+  width: 190px;
+  padding: 18px 25px;
+  text-align: center;
+  color: #eee;
+  background-color: #669966;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+/* Get 40$ Modal */
+
+@media (max-width: 950px) {
+  .modal-get {
+    width: 800px;
+  }
+
+  .modal-get.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-2 .form-control {
+    margin: 10px 0px;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-2 .form-control input {
+    width: 225px;
+  }
+
+  .modal-get-body
+    .modal-get-parent
+    .modal-get-child-2
+    .form-control
+    .enter-btn {
+    width: 105px;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-2 .form-control .btn-1,
+  .btn-2 {
+    width: 170px;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal-get {
+    max-width: 100%;
+  }
+
+  .modal-get-body {
+    overflow-y: auto;
+  }
+
+  .modal-get-body .modal-get-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-1 {
+    width: 100%;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-1 .image-1 {
+    display: none;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-1 .image-2 {
+    display: block;
+    width: 100%;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-2 {
+    width: 100%;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-2 .form-control input {
+    width: 285px;
+  }
+
+  .modal-get-body
+    .modal-get-parent
+    .modal-get-child-2
+    .form-control
+    .enter-btn {
+    width: 135px;
+  }
+
+  .modal-get-body .modal-get-parent .modal-get-child-2 .form-control .btn-1,
+  .btn-2 {
+    width: 210px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-get-body
+    .modal-get-parent
+    .modal-get-child-2
+    .center-child-2
+    .form-control {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-get-body
+    .modal-get-parent
+    .modal-get-child-2
+    .center-child-2
+    .form-control
+    input {
+    width: 315px;
+    display: block;
+  }
+
+  .modal-get-body
+    .modal-get-parent
+    .modal-get-child-2
+    .center-child-2
+    .form-control
+    .enter-btn {
+    width: 315px;
+    display: block;
+    margin-top: 12px;
+  }
+
+  .modal-get-body
+    .modal-get-parent
+    .modal-get-child-2
+    .center-child-2
+    .form-control
+    .btn-1,
+  .btn-2 {
+    width: 315px;
+    display: block;
+    margin: 12px 0px;
   }
 }
