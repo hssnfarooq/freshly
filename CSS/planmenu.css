@@ -1423,7 +1423,7 @@ button[data-modal-target='#modal']:active {
     font-size: 1rem;
     text-align: center;
   }
-  .menu-plans-links{
+  .menu-plans-links {
     display: none;
   }
 }
@@ -1602,8 +1602,6 @@ button[data-modal-target='#modal']:active {
   pointer-events: all;
 }
 
-
-
 /* Get 40$ Modal */
 
 @media (max-width: 950px) {
@@ -1731,4 +1729,3 @@ button[data-modal-target='#modal']:active {
     margin: 12px 0px;
   }
 }
-

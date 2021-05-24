@@ -1,0 +1,1381 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* NavBar */
+
+.container-1 {
+  max-width: 1460px;
+  margin: auto;
+}
+
+.freshly-pages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem 0px;
+}
+
+.freshly-logo {
+  margin-right: 1.5rem;
+}
+
+.freshly-logo img {
+  width: 6rem;
+  max-width: 100%;
+}
+
+.freshlybusiness-logo {
+  margin-left: 1.5rem;
+}
+
+.freshlybusiness-logo img {
+  width: 10.5rem;
+  max-width: 100%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px 0px;
+  position: relative;
+}
+
+.logo img {
+  width: 115px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav ul li {
+  padding-right: 18px;
+  margin-left: 10px;
+}
+
+.nav ul li a {
+  font-size: 1.8rem;
+  color: #303030;
+  font-weight: 600;
+}
+
+.nav ul li .my-account-btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3167ff;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.nav ul li .my-account-btn:hover {
+  color: #fff;
+  background-color: #2850c7;
+}
+
+.nav ul li a img {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li a:hover {
+  color: #3167ff;
+}
+
+/* Navbar Responsive */
+.navbar-ham {
+  display: none;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* Main Section */
+.parent-sides {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 35px auto;
+}
+
+.parent-sides .child-left-side {
+  width: 30%;
+  background-color: #fff;
+  padding: 15px 25px;
+}
+
+.parent-sides .child-left-side .calender-area {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.parent-sides .child-left-side .calender-area .calender-sub {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.parent-sides .child-left-side .calender-area .calender-sub:hover {
+  border-left: 4.5px solid #3167ff;
+}
+
+.parent-sides
+  .child-left-side
+  .calender-area
+  .calender-sub
+  .calender-sub-child
+  p {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.parent-sides
+  .child-left-side
+  .calender-area
+  .calender-sub
+  .calender-sub-child
+  div {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.parent-sides
+  .child-left-side
+  .calender-area
+  .calender-sub
+  .calender-sub-child
+  .dot-plan-planned {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(40, 165, 40);
+}
+
+.parent-sides
+  .child-left-side
+  .calender-area
+  .calender-sub
+  .calender-sub-child
+  .dot-plan-cancelled {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(165, 40, 61);
+}
+
+.parent-sides .child-left-side .my-sub-sett {
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Right Side */
+
+.parent-sides .child-right-side {
+  width: 70%;
+  background-color: #eee;
+  padding: 15px 25px;
+  border-radius: 5px;
+  overflow-y: auto;
+  height: 80vh;
+}
+
+.parent-sides .child-right-side .child-right-side-body {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.parent-sides .child-right-side .child-right-side-body .head-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 15px;
+}
+
+.parent-sides .child-right-side .child-right-side-body .head-parent p {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.parent-sides
+  .child-right-side
+  .child-right-side-body
+  .head-parent
+  .dot-plan-planned {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(40, 165, 40);
+  display: inline-block;
+}
+
+.parent-sides .child-right-side .child-right-side-body .head-parent span {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.parent-sides .child-right-side .child-right-side-body .back-btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  background-color: #eee;
+  display: none;
+  cursor: pointer;
+}
+
+.parent-sides
+  .child-right-side
+  .child-right-side-body
+  .back-btn
+  .back-btn-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.parent-sides
+  .child-right-side
+  .child-right-side-body
+  .head-parent
+  .head-child
+  .cancel-order-btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3167ff;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.parent-sides .child-right-side .child-right-side-body .small-navigation-part {
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.parent-sides .child-right-side .child-right-side-body .nav-anchor {
+  padding: 5px 5px;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 1.6rem;
+  border: 2px solid rgb(156, 155, 155);
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Person Section */
+
+.container-2 {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.container-2 .person-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-2 .person-section .person-section-child p {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.container-2 .person-section .person-section-child div {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.container-2 .person-section .person-section-child .modify-order-btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3167ff;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.container-2 .person-section-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 0px auto;
+}
+.container-2 .person-section-cards .person-section-cards-list {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.container-2 .person-section-cards .person-section-cards-list .card-1 {
+  width: 180px;
+  border: 0.5px solid #eee;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  min-height: 250px;
+}
+
+.container-2
+  .person-section-cards
+  .person-section-cards-list
+  .card-1
+  .card-1-content {
+  padding: 5px 10px;
+}
+
+.container-2
+  .person-section-cards
+  .person-section-cards-list
+  .card-1
+  .card-1-content
+  p {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.container-2
+  .person-section-cards
+  .person-section-cards-list
+  .card-1
+  .card-1-content
+  div {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.container-2 .person-section-cards .person-section-cards-list img {
+  width: 179px;
+}
+
+/* Menu Of The Week */
+.container-2 {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.container-2 .menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-2 .menu-section h3 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+.container-2 .menu-section .menu-section-child div {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.container-2 .menu-section-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 0px auto;
+}
+.container-2 .menu-section-cards .menu-section-cards-list {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.container-2 .menu-section-cards .menu-section-cards-list .card-1 {
+  width: 150px;
+  border: 0.5px solid #eee;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  min-height: 280px;
+}
+
+.container-2
+  .menu-section-cards
+  .menu-section-cards-list
+  .card-1
+  .card-1-content {
+  padding: 5px 10px;
+}
+
+.container-2
+  .menu-section-cards
+  .menu-section-cards-list
+  .card-1
+  .card-1-content
+  div {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.container-2 .menu-section-cards .menu-section-cards-list img {
+  width: 149px;
+}
+
+/* Media Queries */
+@media (max-width: 880px){
+  .parent-sides .child-right-side {
+    width: 70%;
+    background-color: #eee;
+    padding: 15px 25px;
+    border-radius: 5px;
+    overflow-y: auto;
+    height: 80vh;
+  }
+  .parent-sides .child-left-side {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px 25px;
+  }
+}
+@media (max-width: 875px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-ham {
+    display: none;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .navbar-ham ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .navbar-ham ul .list-1 {
+    margin: 20px 0px 0px;
+  }
+
+  .navbar-ham.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav {
+    margin-top: 15px;
+    padding: 12px 15px;
+  }
+
+  .parent-sides .child-left-side {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 25px;
+  }
+
+  .parent-sides .child-right-side {
+    display: none;
+    width: 100%;
+  }
+  .parent-sides .child-right-side .child-right-side-body .back-btn {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 600px) {
+  .parent-sides .child-right-side .child-right-side-body .head-parent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .parent-sides
+    .child-right-side
+    .child-right-side-body
+    .head-parent
+    .head-child
+    .cancel-order-btn {
+    margin: 10px 0px;
+    display: inline-block;
+  }
+
+  .container-2 .person-section {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container-2 .person-section .person-section-child p {
+    text-align: center;
+  }
+
+  .container-2 .person-section .person-section-child div {
+    text-align: center;
+  }
+
+  .container-2 .person-section .person-section-child .modify-order-btn {
+    margin: 10px 0px;
+    display: inline-block;
+  }
+
+  .container-2 .person-section-cards .person-section-cards-list {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-2 .menu-section-cards .menu-section-cards-list {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parent-sides .child-right-side .child-right-side-body .nav-anchor {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-2 .menu-section-cards .menu-section-cards-list .card-1 {
+    width: 140px;
+  }
+
+  .container-2 .menu-section-cards .menu-section-cards-list img {
+    width: 139px;
+  }
+
+  .container-2 .menu-section h3 {
+    font-size: 2.4rem;
+  }
+
+  .container-2 .person-section-cards .person-section-cards-list .card-1 {
+    width: 200px;
+  }
+
+  .container-2
+    .person-section-cards
+    .person-section-cards-list
+    .card-1
+    .card-1-content
+    p {
+    font-size: 1.5rem;
+  }
+
+  .container-2 .person-section-cards .person-section-cards-list img {
+    width: 199px;
+  }
+
+  .parent-sides .child-left-side {
+    padding: 15px 10px;
+  }
+
+  .parent-sides .child-right-side {
+    padding: 15px 10px;
+  }
+
+  .parent-sides .child-right-side .child-right-side-body {
+    background-color: #fff;
+    padding: 25px 10px;
+    border-radius: 5px;
+  }
+}
+
+/* Gullime Modal */
+.modal-subscription {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+  width: 1100px;
+  height: 95vh;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.modal-subscription.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-subscription-body {
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.modal-subscription .modal-subscription-body .below-header-line {
+  background-color: #666;
+  width: 100%;
+  height: 0.5px;
+  padding: 0px;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-subscription-body-header-child
+  .close-button {
+  background: transparent;
+  border: none;
+  outline: unset;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.modal-subscription .modal-subscription-body .modal-subscription-body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 25px 0px;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-subscription-body-header-child
+  h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-subscription-body-header-child
+  h2
+  span
+  a {
+  font-size: 1.6rem;
+  color: #666;
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-subscription-body-header-child
+  .modal-subscription-nav-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-subscription-body-header-child
+  .modal-subscription-nav-items
+  div
+  a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-subscription-body-header-child
+  .modal-subscription-nav-items
+  div
+  a:hover {
+  color: #3167ff;
+  border-bottom: 2px solid #3167ff;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-subscription-body-header-child
+  .modal-subscription-nav-items
+  .mrg-sec {
+  margin-left: 10px;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-subscription .modal-subscription-body .modal-mysubscripton-section {
+  padding: 0px 25px;
+  overflow-y: auto;
+  margin: 2px 0px 15px;
+  height: 80vh;
+}
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part {
+  margin: 10px 0px;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #666;
+  padding: 5px 0px;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-div {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1.2px solid rgb(156, 155, 155);
+  border-radius: 5px;
+  display: block;
+  width: 400px;
+  max-width: 100%;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-div
+  i {
+  margin-right: 5px;
+  color: #666;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-div
+  span
+  input {
+  border: 0;
+  padding: 5px;
+  width: 55%;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-div
+  input {
+  border: 0;
+  padding: 5px;
+  width: 70%;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-part-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-part-child
+  .btn-width {
+  width: 250px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #3167ff;
+  padding: 10px 12px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-part-child
+  .change-btn {
+  color: #fff;
+}
+
+.modal-subscription
+  .modal-subscription-body
+  .modal-mysubscripton-section
+  .modal-mysubscripton-section-part
+  .modal-mysubscripton-section-part-child
+  .stop-subscription {
+  color: #666;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
+/* My Account */
+
+.modal-myaccount-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 5px;
+}
+
+.modal-myaccount-section .modal-myaccount-form-section {
+  width: 650px;
+  padding: 5px 35px;
+}
+
+.modal-myaccount-section
+  .modal-myaccount-form-section
+  .modal-myaccount-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modal-myaccount-section
+  .modal-myaccount-form-section
+  .modal-myaccount-section-head
+  h5 {
+  font-size: 3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.modal-myaccount-section
+  .modal-myaccount-form-section
+  .modal-myaccount-section-head
+  .head-logout
+  a {
+  font-size: 1.7rem;
+  color: #3167ff;
+}
+
+.modal-myaccount-section .modal-myaccount-form-section .modal-form-section {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.modal-myaccount-section
+  .modal-myaccount-form-section
+  .modal-form-section
+  .form-section-control {
+  margin: 2px;
+}
+
+.modal-myaccount-section
+  .modal-myaccount-form-section
+  .modal-form-section
+  .form-section-control
+  label {
+  display: block;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.modal-myaccount-section
+  .modal-myaccount-form-section
+  .modal-form-section
+  .form-section-control
+  input {
+  padding: 10px 10px;
+  width: 100%;
+  display: block;
+  color: #333;
+  font-size: 1.6rem;
+  border: 1.5px #666 solid;
+  border-radius: 5px;
+}
+
+.modal-myaccount-section
+  .modal-myaccount-form-section
+  .modal-form-section
+  .form-section-control
+  .account-btn {
+  color: #fff;
+  background-color: #3167ff;
+  width: 100%;
+  text-align: center;
+  padding: 10px 12px;
+  margin: 10px 0px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.modal-myaccount-section .table-data {
+  width: 650px;
+  padding: 5px 35px;
+}
+
+.modal-myaccount-section .table-data table {
+  width: 100%;
+  text-align: center;
+  margin: 5px 0px 25px;
+}
+
+.modal-myaccount-section .table-data h5 {
+  font-size: 3rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0px 0px 10px;
+}
+
+.modal-myaccount-section .table-data table tr th {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.modal-myaccount-section .table-data table tr td {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Modal Media Queries */
+
+@media (max-width: 935px) {
+  .modal-subscription {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 775px) {
+  .modal-subscription {
+    max-width: 95%;
+  }
+
+  .modal-subscription .modal-subscription-body .modal-mysubscripton-section {
+    display: block;
+    height: 465px;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-part-child {
+    flex-direction: column;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-part-child
+    div {
+    width: 100%;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-part-child
+    .btn-width {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-div {
+    width: 100%;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-div
+    span
+    input {
+    width: 100%;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-div
+    input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  .modal-myaccount-section .modal-myaccount-form-section {
+    width: 485px;
+    padding: 5px 25px;
+  }
+
+  .modal-myaccount-section .table-data {
+    width: 485px;
+    padding: 5px 25px;
+  }
+
+  .modal-myaccount-section .table-data table tr th {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .modal-myaccount-section .table-data table tr td {
+    font-size: 1.4rem;
+    color: #333;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal-subscription
+    .modal-subscription-body
+    .modal-subscription-body-header-child
+    h2 {
+    font-size: 2rem;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-subscription-body-header-child
+    h2
+    span
+    a {
+    font-size: 1.5rem;
+  }
+
+  .modal-subscription .modal-subscription-body .modal-subscription-body-header {
+    padding: 15px 15px 0px;
+  }
+
+  .modal-subscription .modal-subscription-body .modal-mysubscripton-section {
+    padding: 0px 15px;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-div {
+    width: 100%;
+  }
+
+  .modal-subscription .modal-subscription-body .modal-mysubscripton-section {
+    overflow-y: scroll;
+    height: 85%;
+    display: block;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-part-child
+    .btn-width {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-div
+    span
+    input {
+    width: 100%;
+  }
+
+  .modal-subscription
+    .modal-subscription-body
+    .modal-mysubscripton-section
+    .modal-mysubscripton-section-part
+    .modal-mysubscripton-section-div
+    input {
+    width: 100%;
+  }
+
+  .modal-myaccount-section .modal-myaccount-form-section {
+    width: 355px;
+    padding: 5px 15px;
+  }
+
+  .modal-myaccount-section .table-data {
+    width: 355px;
+    padding: 5px 15px;
+  }
+
+  .modal-myaccount-section .table-data table tr th {
+    font-size: 1.45rem;
+  }
+
+  .modal-myaccount-section .table-data table tr td {
+    font-size: 1.35rem;
+  }
+
+  .modal-myaccount-section {
+    height: 85%;
+  }
+
+  .modal-myaccount-section .table-data h5 {
+    font-size: 2rem;
+  }
+
+  .modal-myaccount-section
+    .modal-myaccount-form-section
+    .modal-myaccount-section-head
+    h5 {
+    font-size: 2rem;
+  }
+}
+
+/* Cancel Order Modal */
+.modal-cancel-order {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+  width: 750px;
+  height: 550px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.modal-cancel-order.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-cancel-order-body {
+  width: 100%;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.modal-cancel-order-body .modal-cancel-order-header h3 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin: 20px 0px 10px;
+  padding: 2px 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.modal-cancel-order-body .modal-cancel-order-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.modal-cancel-order-body .modal-cancel-order-section img {
+  width: 250px;
+  display: inline-block;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-cancel-order-body
+  .modal-cancel-order-section
+  .modal-cancel-order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-cancel-order-body
+  .modal-cancel-order-section
+  .modal-cancel-order-button
+  .cancel-order-btn {
+  padding: 10px 12px;
+  background-color: rgb(175, 36, 36);
+  font-size: 1.6rem;
+  color: #fff;
+  width: 120px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+.modal-cancel-order-body
+  .modal-cancel-order-section
+  .modal-cancel-order-button
+  .confirm-order-btn {
+  padding: 10px 12px;
+  background-color: #3167ff;
+  font-size: 1.6rem;
+  color: #fff;
+  width: 120px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  display: block;
+  margin: 10px 0px 10px 10px;
+}
+
+.modal-cancel-order-body
+  .modal-cancel-order-section
+  .modal-cancel-order-button
+  #overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (max-width: 665px) {
+  .modal-cancel-order {
+    max-width: 90%;
+  }
+
+  .modal-cancel-order-body {
+    padding: 10px 15px;
+  }
+
+  .modal-cancel-order-body .modal-cancel-order-header h3 {
+    font-size: 2.5rem;
+  }
+
+  .modal-cancel-order-body .modal-cancel-order-section h2 {
+    font-size: 2rem;
+  }
+
+  .modal-cancel-order-body .modal-cancel-order-section img {
+    width: 200px;
+  }
+}

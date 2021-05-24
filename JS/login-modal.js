@@ -1,23 +1,23 @@
-const openModalButton = document.querySelectorAll('[data-modal-target]');
-const closeModalButton = document.querySelectorAll('[data-close-button]');
-const overlays = document.getElementById('overlay');
+const openModalButtonss = document.querySelectorAll('[data-modal-target]');
+const closeModalButtonss = document.querySelectorAll('[data-close-button]');
+const overlayss = document.getElementById('overlay');
 
-openModalButton.forEach(button => {
+openModalButtonss.forEach(button => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
 });
 
-closeModalButton.forEach(button => {
+closeModalButtonss.forEach(button => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal-get'); //select parent element html
+    const modal = button.closest('.modal-login'); //select parent element html
     closeModal(modal);
   });
 });
 
-overlays.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal-get.active');
+overlayss.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal-login.active');
   modals.forEach(modal => {
     closeModal(modal);
   });
@@ -29,7 +29,7 @@ function openModal(modal) {
   // }
   if (modal == null) return;
   modal.classList.add('active');
-  overlays.classList.add('active');
+  overlayss.classList.add('active');
 }
 
 function closeModal(modal) {
@@ -38,5 +38,5 @@ function closeModal(modal) {
   // }
   if (modal == null) return;
   modal.classList.remove('active');
-  overlays.classList.remove('active');
+  overlayss.classList.remove('active');
 }
